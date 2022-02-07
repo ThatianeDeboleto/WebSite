@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio CSS - HTML</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <div class="user">
+        <img src="images/pic.jpg" alt="">
+        <h3 class="name">Thatiane Deboleto</h3>
+        <p class="post">Da Medicina para Programação</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">inicio</a></li>
+            <li><a href="#about">sobre</a></li>
+            <li><a href="#contact">contato</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- content section starts  -->
+
+<div class="container">
+
+    <section class="home" id="home">
+
+        <h3>Bem vindo(a)</h3>
+        <h3 class="name">Meu nome é <span>Thatiane</span></h3>
+        <h3 class="post">Sou uma desenvolvedora <span class="typing-text"></span></h3>
+
+        <a href="https://thatianedeboleto.github.io/Deboleto/"><button class="btn">Portfólio</button></a>
+
+        <div class="share">
+            <a href="https://github.com/ThatianeDeboleto" class="fab fa-github"></a>
+            <a href="https://www.instagram.com/anenimtzz/" class="fab fa-instagram"></a>
+            <a href="https://codepen.io/AneDeboleto/pen/oNwPxVX" class="fab fa-codepen"></a>
+            <a href="https://www.linkedin.com/in/thatiane-deboleto" class="fab fa-linkedin"></a>
+        </div>
+
+    </section>
+
+    <!-- about section  -->
+
+    <section class="about" id="about">
+
+        <div class="skills">
+            <div class="progress">
+                <h3>html <span>45%</span></h3>
+                <img align="center" alt="Ane-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>css <span>35%</span></h3>
+                <img align="center" alt="Ane-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>javascript <span>40%</span></h3>
+                <img align="center" alt="Ane-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>python <span>70%</span></h3>
+                <img align="center" alt="Ane-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>java <span>30%</span></h3>
+                <img align="center" alt="Ane-Java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
+                <div class="bar"><span></span></div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- education section  -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading">Atualmente</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="year">2022-2025</div>
+                <h3>Cursando Analise de desenvolvimento</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact section  -->
+    <section class="contact" id="contact">
+
+        <h1 class="heading">Fale comigo</h1>
+
+        <div class="row">
+
+            <form action="">
+                <input type="text" class="box" placeholder="primeiro nome">
+                <input type="text" class="box" placeholder="segundo nome">
+                <input type="email" class="box" placeholder="seu email">
+                <input type="text" class="box" placeholder="projeto">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="messagem"></textarea>
+                <input type="submit" value="enviar" class="btn">
+            </form>
+
+            <div class="content">
+                <div class="icons">
+                    <h3><i class="fas fa-map-marker-alt"></i> endereço </h3>
+                    <p>Av Pedro Botesi, Mogi Mirim</p>
+                </div>
+                <div class="icons">
+                    <h3><i class="fas fa-envelope"></i> email </h3>
+                    <p>thatianedeboleto@gmail.com</p>
+                </div>
+                <div class="icons">
+                    <h3><i class="fas fa-phone"></i> celular </h3>
+                    <p>11 96467-4101</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- content section ends -->
+
+<!-- theme toggler  -->
+
+<div class="theme-toggler">
+    <span style="background: linear-gradient(deeppink, purple);"></span>
+    <span style="background: linear-gradient(lightgreen, crimson);"></span>
+    <span style="background:linear-gradient(blueviolet, deeppink)"></span>
+    <span style="background:linear-gradient(coral, blueviolet)"></span>
+    <span style="background:linear-gradient(#999, #111)"></span>
+</div>
+
+
+<!-- type.js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+<script>
+
+    var type = new Typed('.typing-text',{
+        strings : [ 'BackEnd', 'FrontEnd', 'Python', 'Java', 'JavaScript', 'HTML', 'CSS'],
+        typeSpeed: 120,
+        loop:true
+    });
+
+    let themeColor = document.querySelectorAll('.theme-toggler span');
+    themeColor.forEach(color => color.addEventListener('click', () =>{
+        let background = color.style.background;
+        document.querySelector('body').style.background = background;
+    }));
+
+</script>
+
+</body>
+</html>
